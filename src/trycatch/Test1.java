@@ -8,6 +8,7 @@ import service.Service1;
 import service.Service2;
 
 
+
 /**
  * Created By Lu Chuan On 2019/11/7
  */
@@ -27,6 +28,7 @@ public class Test1 {
 				status =1;
 			}
 			e.printStackTrace();
+			System.out.println(e);
 		} catch (Service2Exception e) {
 			if (e.getMessage().equals(Service2ExceptionEnum.TIP1.getMsg())) {
 				status =2;
@@ -35,6 +37,7 @@ public class Test1 {
 				status =3;
 			}
 			e.printStackTrace();
+			System.out.println(e);
 		} finally {
 			System.out.println(status);
 		}
