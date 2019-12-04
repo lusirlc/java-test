@@ -33,4 +33,6 @@ public class Son extends Father {
 	public void run(){
 		System.out.println("I am son run method");
 	}
+	
+//	public void finalMethod() {}//报错，子类不能重写父类的final方法
 }

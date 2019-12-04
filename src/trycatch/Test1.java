@@ -36,8 +36,12 @@ public class Test1 {
 			if (e.getMessage().equals(Service2ExceptionEnum.TIP2.getMsg())) {
 				status =3;
 			}
+			StackTraceElement element = e.getStackTrace()[0];
+			System.out.println(element.getClassName());
+			System.out.println(element.getMethodName());
+			System.out.println(element.getLineNumber());
+			System.out.println(e.getMessage());
 			e.printStackTrace();
-			System.out.println(e);
 		} finally {
 			System.out.println(status);
 		}

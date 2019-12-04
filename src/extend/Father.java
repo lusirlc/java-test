@@ -38,4 +38,8 @@ public class Father {
 	public void eat(){
 		System.out.println("I am father eat method");
 	}
+	
+	public final void finalMethod() {
+		System.out.println("I am father final method");
+	}
 }
